@@ -13,3 +13,9 @@ jobs:
       - name: Di Hola
         run: echo "Hola a Todos"
       
+      - name: Quien soy
+        run: whoami
+
+        
+      - name: Fecha de Hoy
+        run: date
