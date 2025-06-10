@@ -1,0 +1,21 @@
+#Nombre
+name: My Hello World
+
+#Evento
+on:
+  push:
+
+jobs:
+  Tarea1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Di Hola
+        run: echo "Hola a Todos"
+      
+      - name: Quien soy
+        run: whoami
+
+        
+      - name: Fecha de Hoy
+        run: date
