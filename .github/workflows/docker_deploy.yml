@@ -22,7 +22,7 @@ jobs:
       - name: Extract build folder from Docker image
         run: |
           container_id=$(docker create react-app)
-          docker cp $container_id:/app/build ./build
+          docker cp $container_id:/usr/share/nginx/html ./build
           docker rm $container_id
 
       - name: Deploy to GitHub Pages
